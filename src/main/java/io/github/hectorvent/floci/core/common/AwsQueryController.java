@@ -113,6 +113,7 @@ public class AwsQueryController {
             "CreateLaunchConfiguration", "DescribeLaunchConfigurations", "DeleteLaunchConfiguration",
             "CreateAutoScalingGroup", "UpdateAutoScalingGroup", "DeleteAutoScalingGroup",
             "DescribeAutoScalingGroups", "SetDesiredCapacity",
+            "StartInstanceRefresh", "DescribeInstanceRefreshes",
             "CreateOrUpdateTags", "DeleteTags",
             "DescribeAutoScalingInstances", "AttachInstances", "DetachInstances",
             "TerminateInstanceInAutoScalingGroup",
@@ -361,7 +362,11 @@ public class AwsQueryController {
             "CreateConfigurationSetEventDestination",
             "UpdateConfigurationSetEventDestination",
             "DeleteConfigurationSetEventDestination",
-            "UpdateConfigurationSetSendingEnabled"
+            "UpdateConfigurationSetSendingEnabled",
+            "CreateConfigurationSetTrackingOptions",
+            "UpdateConfigurationSetTrackingOptions",
+            "DeleteConfigurationSetTrackingOptions",
+            "UpdateConfigurationSetReputationMetricsEnabled"
     );
 
     private static final Set<String> COGNITO_ACTIONS = Set.of(
